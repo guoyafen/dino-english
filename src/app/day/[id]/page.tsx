@@ -110,7 +110,8 @@ function IntroStep({ dayData, nickname, onNext }: { dayData: typeof DAYS[0]; nic
       <Dino mood="waving" size={140} speechBubble={`Hello, ${nickname}! 🎉`} />
       <div className="bg-white rounded-3xl p-6 shadow-md border-2 border-pink-100 w-full">
         <h2 className="text-2xl font-black text-pink-500 mb-2">{dayData.subtitle}</h2>
-        <p className="text-gray-600 mb-4">今天的目标：<span className="text-pink-500 font-semibold">{dayData.goal}</span></p>
+        <p className="text-gray-500 text-sm mb-1">今天的目标：</p>
+        <p className="text-pink-500 font-semibold mb-4 text-center leading-relaxed">{dayData.goal}</p>
         <div className="bg-pink-50 rounded-2xl p-4">
           <p className="text-sm text-gray-500 mb-2 font-semibold">今天要学的表达：</p>
           <div className="flex flex-wrap gap-2 justify-center">
